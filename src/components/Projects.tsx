@@ -2,74 +2,104 @@
 
 import { motion } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
+import Image from "next/image";
 
 export default function Projects() {
   const projects = [
     {
       id: 1,
+      title: "XenYou",
+      description:
+        "An AI-powered platform that revolutionizes student housing by seamlessly connecting students with trusted landlords. Find your perfect match in seconds.",
+      tags: [
+        "Next.js",
+        "React",
+        "Javascript",
+        "TypeScript",
+        "Chakra UI",
+        "Python",
+        "Postgres",
+        "FastAPI",
+      ],
+      image: "/images/xenyou.png",
+      github: "https://github.com/joshscripts-it/xenyou",
+      link: "https://xenyou.vercel.app/",
+    },
+    {
+      id: 1,
       title: "SaaS Analytics Dashboard",
       description:
         "Real-time analytics dashboard for tracking application metrics and user behavior.",
-      tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Chart.js"],
-      image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-      github: "#",
-      link: "#",
+      tags: [
+        "React",
+        "Javascript",
+        "TypeScript",
+        "Chakra UI",
+        "High-charts",
+        "Vite.js",
+      ],
+      image: "/images/dashboard.png",
+      github: "https://github.com/joshscripts-it/LYT_dash",
+      link: "https://lyt-dashboard-two.vercel.app",
     },
     {
       id: 2,
       title: "Mobile Fitness App",
       description:
         "Cross-platform fitness tracking app with workout planning and progress analytics.",
-      tags: ["React Native", "TypeScript", "Firebase", "Redux"],
-      image:
-        "https://images.unsplash.com/photo-1512941691920-25bda61d09b0?w=600&h=400&fit=crop",
-      github: "#",
-      link: "#",
+      tags: ["React Native", "React", "TypeScript", "Expo", "Redux"],
+      image: "/images/fitgo.png",
+      github: "https://github.com/joshscripts-it/fitgo",
+      link: "https://www.upwork.com/freelancers/~01e654819a1555e31b?p=1822239975209050112",
     },
     {
       id: 3,
       title: "E-Commerce Platform",
       description:
         "Full-featured e-commerce platform with payment integration and inventory management.",
-      tags: ["Next.js", "PostgreSQL", "Stripe", "React", "Tailwind"],
-      image:
-        "https://images.unsplash.com/photo-1460925895917-adf4e565db1d?w=600&h=400&fit=crop",
-      github: "#",
-      link: "#",
+      tags: ["Next.js", "Stripe", "React", "Tailwind", "Shad-cn"],
+      image: "/images/ecommerce.png",
+      github: "https://github.com/joshscripts-it/Xclusive-cart",
+      link: "https://www.upwork.com/freelancers/~01e654819a1555e31b?p=1699531368420610048",
     },
     {
       id: 4,
-      title: "Task Management Tool",
+      title: "User Onboarding",
       description:
-        "Collaborative task management app with real-time updates and team features.",
-      tags: ["React", "Node.js", "WebSocket", "MongoDB", "Tailwind CSS"],
-      image:
-        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop",
-      github: "#",
-      link: "#",
+        "Intuitive, responsive and modern customer onboarding section for Tublian.com",
+      tags: [
+        "React",
+        "Node.js",
+        "Express.js",
+        "Chakra UI",
+        "MongoDB",
+        "Stripe",
+        "Auth",
+        "Vite.js",
+      ],
+      image: "/images/onboarding.png",
+      github: "https://github.com/joshscripts-it/tublian-challenge",
+      link: "https://tublian-challenge-vert.vercel.app/",
     },
     {
       id: 5,
-      title: "AI Content Generator",
+      title: "Modern Wallet Design",
       description:
-        "Smart content generation tool powered by OpenAI with user-friendly interface.",
-      tags: ["Next.js", "OpenAI API", "React", "Tailwind CSS", "NextAuth"],
-      image:
-        "https://images.unsplash.com/photo-1677442d019cecf8313412f1b791b95b82ef07d8?w=600&h=400&fit=crop",
-      github: "#",
-      link: "#",
+        "Modern Crypto Wallet to Seamlessly and Efficiently Store and Manage crypto-currencies with user-friendly interface.",
+      tags: ["React Native", "React", "Typescript", "Javascript", "Charts"],
+      image: "/images/wallet.png",
+      github: "https://github.com/joshscripts-it/krypto-b",
+      link: "https://www.upwork.com/freelancers/~01e654819a1555e31b?p=1705461284832276480",
     },
     {
       id: 6,
-      title: "Portfolio Showcase",
+      title: "Rare Eat",
       description:
-        "Modern portfolio website built with Next.js showcasing creative projects.",
-      tags: ["Next.js", "Framer Motion", "TypeScript", "Tailwind CSS"],
-      image:
-        "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=400&fit=crop",
-      github: "#",
-      link: "#",
+        "Modern Food ordering app. Manage order, make payment and more...",
+      tags: ["React-native", "Expo", "TypeScript", "React"],
+      image: "/images/rare-eat.png",
+      github: "https://github.com/joshscripts-it/tobams-test",
+      link: "https://www.upwork.com/freelancers/~01e654819a1555e31b?p=1750908550083485696",
     },
   ];
 
@@ -118,11 +148,25 @@ export default function Projects() {
               className="group relative rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:border-blue-500/50 transition-all duration-300"
             >
               <div className="relative h-48 overflow-hidden bg-gray-900">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                />
+                {typeof project.image === "string" &&
+                project.image.startsWith("http") ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                ) : (
+                  <Image
+                    src={
+                      typeof project.image === "string"
+                        ? project.image
+                        : String(project.image)
+                    }
+                    alt={project.title}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
 
@@ -173,7 +217,7 @@ export default function Projects() {
         >
           <p className="text-gray-400 mb-6">Interested in seeing more?</p>
           <a
-            href="https://github.com"
+            href="https://github.com/joshscripts-it"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-3 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-shadow"

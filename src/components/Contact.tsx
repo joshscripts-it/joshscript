@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Send } from "lucide-react";
+import { Github, Linkedin, Send, X } from "lucide-react";
 import { useState } from "react";
 
 export default function Contact() {
@@ -87,7 +87,7 @@ export default function Contact() {
                   href="mailto:hello@joshscript.dev"
                   className="text-lg text-white group-hover:text-blue-400 transition-colors"
                 >
-                  hello@joshscript.dev
+                  developer.gemjoshua@gmail.com
                 </a>
               </div>
 
@@ -104,22 +104,22 @@ export default function Contact() {
                 </p>
                 <div className="flex space-x-4">
                   <a
-                    href="#"
+                    href="https://github.com/joshscripts-it"
                     className="text-white hover:text-blue-400 transition-colors"
                   >
-                    GitHub
+                    <Github />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/gemjoshua"
                     className="text-white hover:text-blue-400 transition-colors"
                   >
-                    LinkedIn
+                    <Linkedin />
                   </a>
                   <a
-                    href="#"
+                    href="https://x.com/joshscripts"
                     className="text-white hover:text-blue-400 transition-colors"
                   >
-                    Twitter
+                    <X />
                   </a>
                 </div>
               </div>

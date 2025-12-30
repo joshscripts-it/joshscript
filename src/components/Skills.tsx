@@ -14,6 +14,7 @@ import {
   SiDocker,
   SiPython,
   SiFastapi,
+  SiChakraui,
 } from "react-icons/si";
 
 export default function Skills() {
@@ -25,6 +26,7 @@ export default function Skills() {
         { name: "React", icon: SiReact },
         { name: "TypeScript", icon: SiTypescript },
         { name: "Tailwind CSS", icon: SiTailwindcss },
+        { name: "Chakra UI", icon: SiChakraui },
       ],
     },
     {

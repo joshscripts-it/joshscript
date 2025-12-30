@@ -1,16 +1,28 @@
 "use client";
 
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, X } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Mail, href: "mailto:hello@joshscript.dev", label: "Email" },
+    {
+      icon: Github,
+      href: "https://github.com/joshscripts-it",
+      label: "GitHub",
+    },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/gemjoshua",
+      label: "LinkedIn",
+    },
+    { icon: X, href: "https://x.com/joshscripts", label: "Twitter" },
+    {
+      icon: Mail,
+      href: "mailto:developer.gemjoshua@gmail.com",
+      label: "Email",
+    },
   ];
 
   return (
@@ -26,7 +38,7 @@ export default function Footer() {
             viewport={{ once: true }}
           >
             <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-2">
-              joshscript
+              Joshscript
             </h3>
             <p className="text-gray-400 text-sm">
               Fullstack developer crafting exceptional digital experiences.

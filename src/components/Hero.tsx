@@ -46,7 +46,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl mx-auto"
         >
-          Expert in Next.js, React, JavaScript, and React Native. I craft
+          Expert in Next.js, React, Typescript, Python and React Native. I craft
           elegant, performant solutions that combine beautiful design with
           robust functionality.
         </motion.p>
