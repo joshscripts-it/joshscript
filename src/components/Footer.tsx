@@ -117,7 +117,6 @@ export default function Footer() {
           className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400"
         >
           <p>&copy; {currentYear} joshscript. All rights reserved.</p>
-          <p>Designed & Built with Next.js & React</p>
         </motion.div>
       </div>
     </footer>
