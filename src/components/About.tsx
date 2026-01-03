@@ -22,12 +22,12 @@ export default function About() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold mb-4">
             <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
               About Me
             </span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-400 text-md max-w-2xl mx-auto">
             Passionate about creating digital solutions that make a difference
           </p>
         </motion.div>
@@ -39,7 +39,7 @@ export default function About() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <p className="text-gray-300 text-lg mb-6 leading-relaxed">
+            <p className="text-gray-300 text-base mb-6 leading-relaxed">
               I'm a fullstack web and mobile developer with a passion for
               creating beautiful, performant applications. My journey in
               development started with a curiosity about how things work, and it
@@ -55,7 +55,7 @@ export default function About() {
               latest industry trends.
             </p>
 
-            <p className="text-gray-300 text-lg mb-8 leading-relaxed">
+            <p className="text-gray-300 text-base mb-8 leading-relaxed">
               When I'm not coding, you'll find me exploring new technologies,
               contributing to open-source projects, or sharing knowledge with
               the developer community. I'm always excited about opportunities to
@@ -86,7 +86,7 @@ export default function About() {
                 viewport={{ once: true }}
                 className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-blue-500/50 transition-all group"
               >
-                <div className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-2">
+                <div className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-2">
                   {stat.value}
                 </div>
                 <p className="text-gray-400 text-sm">{stat.label}</p>

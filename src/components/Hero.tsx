@@ -32,7 +32,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-5xl md:text-7xl font-bold mb-6 leading-tight"
+          className="text-3xl md:text-7xl font-bold mb-6 leading-tight"
         >
           <span className="block text-white">Fullstack Developer</span>
           <span className="block bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
@@ -44,7 +44,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl mx-auto"
+          className="text-md md:text-xl text-gray-400 mb-8 max-w-2xl mx-auto"
         >
           Expert in Next.js, React, Typescript, Python and React Native. I craft
           elegant, performant solutions that combine beautiful design with
@@ -59,7 +59,7 @@ export default function Hero() {
         >
           <a
             href="#projects"
-            className="px-8 py-3 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-shadow inline-flex items-center space-x-2"
+            className="px-8 py-3 rounded-full bg-linear-to-r from-blue-500 to-cyan-500 text-white font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-shadow inline-flex items-center space-x-2"
           >
             <span>View My Work</span>
             <ArrowRight size={20} />

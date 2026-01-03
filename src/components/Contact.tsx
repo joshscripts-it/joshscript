@@ -49,7 +49,7 @@ export default function Contact() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold mb-4">
             <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
               Get In Touch
             </span>
@@ -68,7 +68,7 @@ export default function Contact() {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-xl font-bold text-white mb-4">
+              <h3 className="text-md font-bold text-white mb-4">
                 Let's Connect
               </h3>
               <p className="text-gray-400 mb-6">
@@ -84,7 +84,7 @@ export default function Contact() {
                   Email
                 </p>
                 <a
-                  href="mailto:hello@joshscript.dev"
+                  href="mailto:developer.gemjoshua@gmail.com"
                   className="text-lg text-white group-hover:text-blue-400 transition-colors"
                 >
                   developer.gemjoshua@gmail.com
